@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #cbd5e1;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #64748b;
+}
+
+.summary-card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.transaction-form,
+.transactions {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.transaction-form h2,
+.transactions h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+#searchInput,
+#filterType {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form button {
+  width: 100%;
+  padding: 13px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+.transaction-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.transaction-card h3 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.transaction-card p {
+  margin-bottom: 7px;
+  color: #64748b;
+}
+
+.transaction-card strong {
+  display: block;
+  margin: 12px 0;
+  font-size: 20px;
+  color: #16a34a;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+.edit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+#editSection {
+  border: 2px solid #2563eb;
+  margin-bottom: 25px;
+}
+
+#editSection h2 {
+  color: #2563eb;
+}
+
+#editForm button {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#editForm button[type="submit"] {
+  background: #16a34a;
+}
+
+#editForm button[type="button"] {
+  background: #64748b;
+}
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+  header {
+    padding: 25px 12px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  main {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .summary-card {
+    padding: 18px;
+  }
+
+  .transaction-form,
+  .transactions {
+    padding: 18px;
+  }
+
+  .transaction-card {
+    padding: 15px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 10px 14px;
+    margin: 5px 3px 0 0;
+  }
+}
